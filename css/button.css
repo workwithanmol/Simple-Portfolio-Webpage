@@ -1,0 +1,19 @@
+button{
+    background-color: #FFB742;
+    width: 121px;
+    height: 54px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+button a:link{
+    color: black;
+}
+button a:visited{
+    color: black;
+}
+button a:hover{
+    color: #fff;
+}

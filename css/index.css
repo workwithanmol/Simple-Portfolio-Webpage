@@ -1,0 +1,218 @@
+html{
+    background-color: #ffb742;
+    font-size: 10px;
+    
+}
+body{
+    background-color: #212529;
+    /* width: 70vw; */
+    max-width: 1440px;
+    margin: auto;
+    margin-top: 3.5rem;
+    /* height: 100vh; */
+    min-width: 365px;
+    
+}
+
+.navbar{
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem;
+}
+
+.nav_items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav_items ul{
+    display: flex;
+}
+.nav_items ul li{
+    padding: 0px 1.25rem ;
+    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+}
+a:active a:link, a:visited a:hover{
+    color: #fff;
+}
+a:visited{
+    color: #fff;
+}
+.home:active .home:link, .home:visited .home:hover{
+    color: #ffb742;
+}
+
+.navbar img{
+    width: 5vw;
+    min-width: 5rem;
+}
+
+.container{   
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.intro{
+    max-width: 964px;
+    max-height: 454px;
+    padding-top: 10.8rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+}
+.intro .greeting{
+    font-size: 2.15rem;
+    /* display: flex; */
+    justify-content: center;
+    flex-direction: column;
+}
+.intro .greeting h2{
+    display: flex;
+    justify-content: center;
+}
+.intro .greeting .name{
+    color: #FFB742;
+    text-decoration: underline;
+}
+.intro .greeting .intro_message1{
+    font-size: 4.8rem;
+}
+.intro_message2{
+    font-size: 2.4rem;
+    padding-top: 2.5rem;
+}
+.greeting .photo img{
+    width: 21rem;
+}
+
+.achivement{
+    max-width: 1296px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 13.6rem auto auto auto;
+
+}
+
+.experience, .project, .client{
+    height: 120px;
+    margin: 0.8rem;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    width: 41.6rem;
+    display: flex;
+    justify-content: space-between;   
+    background-color: #292B2E;
+    align-items: center;
+}
+
+.experience_wrapper{
+    width: 357px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto 3rem;
+
+}
+
+.experience2 img {
+    padding: 5px;
+    border-radius: 50%;
+    width: 64px;
+}
+
+.fa-angle-right{
+    color: #fff;
+    font-size: 20px;
+}
+.about_me{
+    margin-top: 13.6rem;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1342px;
+    justify-content: center;
+    min-height: 59.607rem;
+    font-family: 'Poppins', sans-serif;
+}
+.about_me_photo img{
+    width: 62rem;
+}
+
+.who_i_am{
+    font-size: 20px;
+    width: 148px;
+    padding: 6px 0;
+    border-radius: 50px;
+    background-color: #292B2E;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.about_me .about_me_message{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 682px;
+}
+.about_me2{
+    font-size: 4.7rem;
+}
+.about_me3{
+    max-width: 624px;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.my_skills{
+    max-width:1339px ;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 13.7rem;
+}
+.my_skills_wrapper{
+    max-width: 67.2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.my_skills_showcase{
+    max-width: 560px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.my_skills_app_wrapper{
+    width: 560px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.my_skills_app_wrapper .my_skills_app{
+    /* width: 80px;
+    height: 80px; */
+    margin:8px;
+    padding: 8px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #383E45;
+}
+
+.my_skills_app_wrapper .my_skills_app img{
+    padding: 8px;
+    width: 48px;
+    height: 48px;
+}
