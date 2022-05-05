@@ -35,13 +35,13 @@ body{
     font-size: 1.8rem;
     font-family: 'Poppins', sans-serif;
 }
-a:active a:link, a:visited a:hover{
+a:active, a:link, a:visited, a:hover{
     color: #fff;
 }
 a:visited{
     color: #fff;
 }
-.home:active .home:link, .home:visited .home:hover{
+.home:active, .home:link, .home:visited, .home:hover{
     color: #ffb742;
 }
 
