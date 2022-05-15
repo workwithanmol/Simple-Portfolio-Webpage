@@ -1,0 +1,22 @@
+.achivement{
+  /* background-color: red; */
+  font-weight: bold;
+  position: relative;
+  animation: mymove 0.6s;
+}
+
+.achivement{animation-timing-function: linear;}
+
+@keyframes mymove {
+  from {bottom: -300px;}
+  to {bottom: 0px;}
+}
+
+
+.animation_dance {
+  -webkit-animation: dance 8s alternate infinite;
+}
+@keyframes dance{
+  0% {-webkit-transform: scale(0.4);}
+  100% {-webkit-transform: scale(0.8);}
+}

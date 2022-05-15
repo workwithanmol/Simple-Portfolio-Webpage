@@ -1,0 +1,336 @@
+html{
+    background-color: #ffb742;
+    font-size: 10px;
+    
+}
+body{
+    background-color: #212529;
+    /* width: 70vw; */
+    max-width: 1440px;
+    margin: auto;
+    min-width: 365px;
+    
+}
+
+.navbar{
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem;
+}
+
+.nav_items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav_items ul{
+    display: flex;
+}
+.nav_items ul li{
+    padding: 0px 1.25rem ;
+    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+}
+a:link, a:visited{
+    color: #fff;
+}
+
+.home:active .home:link, .home:visited .home:hover{
+    color: #ffb742;
+}
+a:active, a:hover{
+    color: #ffb742;
+}
+.navbar img{
+    width: 5vw;
+    min-width: 5rem;
+}
+
+.container{   
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.intro{
+    max-width: 964px;
+    max-height: 454px;
+    padding-top: 10.8rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+}
+.intro .greeting{
+    font-size: 2.15rem;
+    /* display: flex; */
+    justify-content: center;
+    flex-direction: column;
+}
+
+.name_animation{
+    margin-bottom: 15px;
+}
+.intro .greeting h2{
+    display: flex;
+    justify-content: center;
+}
+.intro .greeting .name{
+    color: #FFB742;
+    text-decoration: underline;
+}
+.intro .greeting .intro_message1{
+    font-size: 4.8rem;
+}
+.intro_message2{
+    font-size: 2.4rem;
+}
+.intro_message1{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 70px;
+    color: transparent;
+    margin: 0 auto 40px;
+    font-family: 'Inter', sans-serif;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: cover;
+    background-image: url(../img/76.webp);
+}
+.greeting .photo img{
+    width: 21rem;
+}
+
+.achivement{
+    max-width: 1296px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 13.6rem auto auto auto;
+
+}
+
+.experience, .project, .client{
+    height: 120px;
+    margin: 0.8rem;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    width: 41.6rem;
+    display: flex;
+    justify-content: space-between;   
+    background-color: #292B2E;
+    align-items: center;
+    box-shadow: 0px 0px 40px 3px hsl(0deg 0% 0% / 38%);
+}
+.experience:hover, .project:hover, .client:hover, .experience:active, .project:active, .client:active{
+    position: relative;
+    bottom: 8px;
+}
+
+.experience_wrapper{
+    width: 357px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto 3rem;
+    
+}
+
+.experience2 img {
+    padding: 5px;
+    border-radius: 50%;
+    width: 64px;
+}
+
+.fa-angle-right{
+    color: #fff;
+    font-size: 20px;
+}
+.about_me{
+    margin-top: 13.6rem;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1342px;
+    justify-content: center;
+    min-height: 59.607rem;
+    font-family: 'Poppins', sans-serif;
+}
+.about_me_photo img{
+    width: 62rem;
+}
+.about_me_photo {
+    position: relative;
+    z-index: 1;
+}
+.about_me_photo2 {
+    /* width: 62rem; */
+    position: absolute;
+    top: -80px;
+    left: -25px;
+    z-index: -1;
+}
+.about_me_photo2 img {
+    width: 44rem;
+    border-style: none;
+}
+
+.who_i_am{
+    font-size: 20px;
+    width: 148px;
+    padding: 6px 0;
+    border-radius: 50px;
+    background-color: #292B2E;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.about_me .about_me_message{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 682px;
+}
+.about_me2{
+    font-size: 4.7rem;
+}
+.about_me3{
+    max-width: 624px;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.my_skills{
+    max-width:1339px ;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 13.7rem;
+}
+.my_skills_wrapper{
+    max-width: 67.2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.my_skills_showcase{
+    max-width: 560px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.my_skills_app_wrapper{
+    width: 560px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.my_skills_app_wrapper .my_skills_app{
+    /* width: 80px;
+    height: 80px; */
+    margin:8px;
+    padding: 8px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #383E45;
+    box-shadow: 0px 0px 40px 3px hsl(0deg 0% 0% / 38%);
+}
+.my_skills_app:hover, .my_skills_app:active{
+    position: relative;
+    bottom: 8px;
+}
+
+.my_skills_app_wrapper .my_skills_app img{
+    padding: 8px;
+    width: 48px;
+    height: 48px;
+}
+footer{
+    background-color: #1c1c1c;
+
+}
+.footer{
+    max-width: 1339px;
+    min-height: 400px;
+    font-family: 'Poppins', sans-serif;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 12rem;
+}
+.footer_name h2 {
+    color: #ffb742;
+    font-size: 3.2rem;
+}
+.footer_name p {
+    font-size: 1.6rem;
+    width: 21rem;
+    padding-top: 11px;
+}
+.footer_newsletters p {
+    color: #7b7b7b;
+    font-size: 1.9rem;
+    width: 27.8rem;
+    padding-top: 2px;
+}
+footer span {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 2.1rem;
+    padding-bottom: 2.1rem;
+}
+footer ul li {
+    font-weight: 400;
+    font-size: 1.9rem;
+    padding: 0.6rem;
+    color: #7b7b7b;
+}
+
+.footer_newsletters input[type="email"]{
+    width: 72%;
+    font-size: 13px;
+    color: rgb(255, 255, 255) !important;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    padding: 16px 60px 16px 20px;
+    margin: 0px;
+    overflow: hidden;
+    border-radius: 30px 0px 0px 30px;
+    background: #212529;
+}
+
+.footer_newsletters input[type="submitl"]{
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    bottom: 1px;
+    background: #ffb742;
+    border-radius: 50%;
+    padding: 15px 28px 15px;
+    /* font-family: "Flaticon"; */
+    font-size: 0;
+    border: none;
+}
+.fa-paper-plane{
+    /* position: absolute; */
+    right: 6%;
+    top: 30%;
+    padding: 0;
+    pointer-events: none;
+    font-size: 23px;
+    color: #212529;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
