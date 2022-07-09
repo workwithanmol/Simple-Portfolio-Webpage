@@ -9,25 +9,31 @@
     <link rel="stylesheet" href="./css/button.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="./css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header>
+    <header id="home">
         <nav class="navbar">
             <div class="nav_logo">
                 <img src="./img/logo.png" alt="">
+                <!-- <i class="fa-solid fa-paper-plane">AB</i> -->
+
             </div>
             <div class="nav_items">
                 <ul>
-                    <li><a href="#" class="home theme_color active" style="color: #ffb742;">Home</a></li>
+                    <li><a href="#home" class="home theme_color active" style="color: #ffb742;">Home</a></li>
                     <li><a href="#about_me" class="text_color_white active">About</a></li>
                     <li><a href="#skills" class="text_color_white">Skills</a></li>
-                    <li><a href="#" class="text_color_white active">Portfolio</a></li>
-                    <li><a href="#" class="text_color_white active">Contact</a></li>
+                    <li><a href="" class="text_color_white active">Portfolio</a></li>
+                    <li><a href="#contact" class="text_color_white active">Contact</a></li>
                 </ul>
             </div>
-            <div>
-                <button class="hire_me hire_me_button "><a href="mailto:yadavanmol25999@gmail.com">Hire Me</a></button>
+            <div class="nav_button">
+                  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <button class="hire_me hire_me_button hire_me_button_top "><a href="mailto:anmol@itsnp.org">Hire Me</a></button>
             </div>
         </nav>
     </header>
@@ -35,11 +41,11 @@
         <div class="container">
             <div class="intro">
                 <div class="greeting text_center">
-                    <h2 class="name_animation">Hi, I am&nbsp;<span class="name ">Anmol Yadav</span>👋</h2>
+                    <h2 class="name_animation">Hi, I am&nbsp;<span class="name ">Anmol Yadav</span><span class="hand_shaking">👋</span></h2>
                     <h2 class="intro_message1">Creative designer & front-end developer</h2>
                     <h3 class="intro_message2">I design and code beautifully simple things, and I love what I do.</h3>
                     <div class="photo text_center">
-                        <img src="./img/photo.png" alt="">
+                        <img src="./img/photo.png" title="Anmol" alt="">
                     </div>
                 </div>
             </div>
@@ -51,8 +57,8 @@
                         </div>
                         <div class="experience3">
                             <span>
-                                <span style="color: #ffb742; font-size: 3.2rem; font-weight: bold;">5+</span><br><span style="font-size: 1.6rem; color:#fff">Years of Experience</span>
-                            </span>
+                                <span style="color: #ffb742; font-size: 32px; font-weight: bold;">5+</span><br><span style="font-size: 16px; color:#fff">Years of Experience</span>
+                            </span>d
                         </div>
                         <div class="experience3">
                             <i class="fa-solidfa-angle-right"></i>
@@ -62,11 +68,11 @@
                 <div class="project text_center">
                     <div class="experience_wrapper">
                         <div class="experience2">
-                            <img src="./img/experience.png" alt="Image">
+                            <img src="./img/completed-project.png" alt="Image">
                         </div>
                         <div class="experience3">
                             <span>
-                                <span style="color: #ffb742; font-size: 3.2rem; font-weight: bold;">100+</span><br><span style="font-size: 1.6rem; color:#fff">Completed Projects</span>
+                                <span style="color: #ffb742; font-size: 32px; font-weight: bold;">100+</span><br><span style="font-size: 16px; color:#fff">Completed Projects</span>
                             </span>
                         </div>
                         <div class="experience3">
@@ -77,11 +83,11 @@
                 <div class="client text_center">
                     <div class="experience_wrapper">
                         <div class="experience2">
-                            <img src="./img/experience.png" alt="Image">
+                            <img src="./img/happy-client.png" alt="Image">
                         </div>
                         <div class="experience3">
                             <span>
-                                <span style="color: #ffb742; font-size: 3.2rem; font-weight: bold;">50+</span><br><span style="font-size: 1.6rem; color:#fff">Happy Clients</span>
+                                <span style="color: #ffb742; font-size: 32px; font-weight: bold;">50+</span><br><span style="font-size: 16px; color:#fff">Happy Clients</span>
                             </span>
                         </div>
                         <div class="experience3">
@@ -114,7 +120,7 @@
                     </div>
                     <div>
                         <button class="hire_me hire_me_button " style="margin-top: 5.6rem;">
-                            <a href="mailto:yadavanmol25999@gmail.com">Hire Me</a>
+                            <a href="mailto:anmol@itsnp.org"">Hire Me</a>
                         </button>
                     </div>
                 </div>
@@ -133,7 +139,7 @@
                         <p>I develop simple, intuitive and responsive user interface that helps users get things done with less effort and time with those technologies.</p>
                     </div>
                     <div>
-                        <button class="hire_me hire_me_button " style="margin-top: 5.6rem; margin-bottom: 3rem;"><a href="mailto:yadavanmol25999@gmail.com">Hire Me</a></button>
+                        <button class="hire_me hire_me_button " style="margin-top: 5.6rem; margin-bottom: 3rem;"><a href="mailto:anmol@itsnp.org"">Hire Me</a></button>
                     </div>
                 </div>
                 <div class="my_skills_showcase">
@@ -173,43 +179,50 @@
 
             </div>
         </div>
+        <div class="connect_me text_center">
+            <h1>Start a project</h1>
+            <p>Interested in working together? We should queue up a chat. I’ll buy the coffee.</p>
+            <a href="">Let's do this</a>
+        </div>
     </main>
     <footer>
-        <div class="footer">
+        <div class="footer" id="contact">
             <div class="footer_name">
                 <h2>Anmol Yadav.</h2>
                 <p>Creative designer & front-end developer</p>
             </div>
-            <div class="footer_links">
+            <div class="footer_links2">
                 <span>Useful Links</span>
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Skills</li>
-                    <li>Portfolio</li>
-                    <li>Contact</li>
+                <ul class="footer_ul">
+                    <li><a href="#home" class="theme_color">Home</a></li>
+                    <li><a href="#about_me" class="text_color_white">About</a></li>
+                    <li><a href="#skills" class="text_color_white">Skills</a></li>
+                    <li><a href="" class="text_color_white active">Portfolio</a></li>
+                    <li><a href="#contact" class="text_color_white active">Contact</a></li>
                 </ul>
             </div>
             <div class="footer_social_media">
                 <span>Social Media</span>
-                <ul>
-                    <li>Instagram</li>
-                    <li>Facebook</li>
-                    <li>Linkedin</li>
-                    <li>Github</li>
-                    <li>Twitter</li>
-                    <li>628616<li>
+                <ul class="footer_ul">
+                    <li><a href="" class="home theme_color active" target="_blank">Instagram</a></li>
+                    <li><a href="#about_me" class="text_color_white active" target="_blank">Facebook</a></li>
+                    <li><a href="#skills" class="text_color_white" target="_blank">Linkedin</a></li>
+                    <li><a href="#" class="text_color_white active" target="_blank">Github</a></li>
+                    <li><a href="#" class="text_color_white active" target="_blank">Twitter</a></li>
                 </ul>
-    
             </div>
             <div class="footer_newsletters">
                 <span>Newsletter</span>
                 <p>Enter your email and get notified about news of.</p>
-                <p>
-                    <input type="email" placeholder="Your Email Address">
+                    <div class="email_button">
+                        <input type="email" placeholder="Your Email Address">
+                        <input type="submit" value="sign up" class="submit_button">
                         <i class="fa-solid fa-paper-plane"></i>
-                </p>
+                </div>
             </div>
+        </div>
+        <div class="footer_copyright">
+            <p>	&copy; 2021 All Rights Reserved. Developed By <a href="mailto:anmol@itsnp.org"">Anmol Yadav</a></p>
         </div>
     </footer>
     <script src="./js/index.js"></script>

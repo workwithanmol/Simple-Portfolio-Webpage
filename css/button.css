@@ -15,14 +15,21 @@ button a{
     font-size: 18px;
 }
 button a:link, button a:visited{
+    transition: all .2s ease-in-out;
     color: black;
 }
 button a:hover, button a:active{
+    transition: all .2s ease-in-out;
     color: #FFB742;
 }
+
 button:hover, button:active{
+    transition: all .2s ease-in-out;
     background-color: transparent;
     border: 3px solid #ffb742;
+}
+button:hover > button a{
+    color: #FFB742;
 }
 .top_button{
     width: 40px;
@@ -34,23 +41,22 @@ button:hover, button:active{
     padding: 10px 16px;
     border-radius: 50%;
     background-color: #292b2e;
+    color: #FFB742;
     position: fixed;
     left: 1743px;
     bottom: 24px;
 }
 
-.top_button_wrapper:hover, .top_button_wrapper:active{
-    background-color: #FFB742;
-    color: red;
-}
+
 .top_button_wrapper .fa-arrrow-up{
     font-size: 35px;
     background-color: #292b2e;
     color: #FFB742;
 
 }
- .fa-arrrow-up:hover, .fa-arrrow-up:active{
-    background-color:#FFB742;
-    color: #292b2e;
+ .fa-arrow-up:hover, .fa-arrow-up:active{
+    transition: all .2s ease-in-out;
+    color: #FFB742;
+    /* background-color:#FFB742; */
 
 }

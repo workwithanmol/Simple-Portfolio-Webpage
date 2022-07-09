@@ -19,7 +19,9 @@ body{
     align-items: center;
     padding: 0 5rem;
 }
-
+.nav_logo{
+    display: flex;
+}
 .nav_items{
     display: flex;
     justify-content: center;
@@ -33,6 +35,7 @@ body{
     font-size: 1.8rem;
     font-family: 'Poppins', sans-serif;
 }
+
 a:link, a:visited{
     color: #fff;
 }
@@ -40,9 +43,16 @@ a:link, a:visited{
 .home:active .home:link, .home:visited .home:hover{
     color: #ffb742;
 }
+
 a:active, a:hover{
+    transition: all .2s ease-in-out;
     color: #ffb742;
+}   
+
+.hire_me:hover > a.hire_me{
+    color: #ffb742 !important;
 }
+
 .navbar img{
     width: 5vw;
     min-width: 5rem;
@@ -130,8 +140,8 @@ a:active, a:hover{
     box-shadow: 0px 0px 40px 3px hsl(0deg 0% 0% / 38%);
 }
 .experience:hover, .project:hover, .client:hover, .experience:active, .project:active, .client:active{
-    position: relative;
-    bottom: 8px;
+    transform: translate(0, -20px);
+    transition: all .3s ease-in-out;
 }
 
 .experience_wrapper{
@@ -246,27 +256,70 @@ a:active, a:hover{
     box-shadow: 0px 0px 40px 3px hsl(0deg 0% 0% / 38%);
 }
 .my_skills_app:hover, .my_skills_app:active{
-    position: relative;
-    bottom: 8px;
+    transition: all .2s ease-in-out;
+    transform: translateY(-10px);
 }
-
 .my_skills_app_wrapper .my_skills_app img{
     padding: 8px;
-    width: 48px;
+    /* width: 48px; */
     height: 48px;
+}
+.connect_me{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 55px 0px;
+    background: #ffb742;
+    width: 77%;
+    border-radius: 15px;
+    margin: auto;
+    transform: translateY(50%);
+}
+.connect_me h1{
+    font-size: 35px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    color: #000;
+}
+.connect_me p{
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    width: 35%;
+    color: #000;
+}
+.connect_me a{
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #000;
+    background: transparent;
+    padding: 12px 40px;
+    border-radius: 30px;
+    border: 2px solid #212529;
+}
+.connect_me a:hover{
+    color: #ffb742;
+    background: #212529;
+    border: 2px solid #212529;
+    transition: all .3s ease;
 }
 footer{
     background-color: #1c1c1c;
-
 }
 .footer{
     max-width: 1339px;
-    min-height: 400px;
+    min-height: 300px;
     font-family: 'Poppins', sans-serif;
     margin: auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 12rem;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 .footer_name h2 {
     color: #ffb742;
@@ -274,12 +327,12 @@ footer{
 }
 .footer_name p {
     font-size: 1.6rem;
-    width: 21rem;
+    width: 24rem;
     padding-top: 11px;
 }
 .footer_newsletters p {
     color: #7b7b7b;
-    font-size: 1.9rem;
+    font-size: 1.7rem;
     width: 27.8rem;
     padding-top: 2px;
 }
@@ -288,49 +341,83 @@ footer span {
     font-weight: 700;
     font-size: 2.1rem;
     padding-bottom: 2.1rem;
+    font-weight: 500
 }
-footer ul li {
+
+.footer_links li a:link,footer .footer_links li a:visited{
     font-weight: 400;
     font-size: 1.9rem;
     padding: 0.6rem;
     color: #7b7b7b;
 }
+.footer_ul li a:hover,footer .footer_ul li a:active{
+    transition: all .2s ease-in-out;
+    color: #ffb742;
+}
+
+.footer_ul li a {
+    font-weight: 400;
+    font-size: 1.9rem;
+    line-height: 26px;
+    padding: 0.6rem;
+    color: #7b7b7b;
+}
+.footer_ul li {
+    margin-bottom: 12px;
+}
 
 .footer_newsletters input[type="email"]{
-    width: 72%;
+    width: 100%;
     font-size: 13px;
-    color: rgb(255, 255, 255) !important;
+    color: rgb(255, 255, 255);
     border-width: initial;
     border-style: none;
-    border-color: initial;
-    border-image: initial;
-    padding: 16px 60px 16px 20px;
-    margin: 0px;
+    padding: 16px 26px 16px 20px;
     overflow: hidden;
     border-radius: 30px 0px 0px 30px;
     background: #212529;
-}
-
-.footer_newsletters input[type="submitl"]{
-    position: absolute;
-    top: 1px;
-    right: 1px;
-    bottom: 1px;
-    background: #ffb742;
-    border-radius: 50%;
-    padding: 15px 28px 15px;
-    /* font-family: "Flaticon"; */
-    font-size: 0;
     border: none;
 }
+.footer_newsletters input[type="email"]:focus{
+    outline: none;
+}
+
+.email_button{
+    width: 100%;
+    display: flex;
+    margin-top: 5px;
+}
+
+.submit_button{
+    font-size: 0;
+    position: relative;
+    left: -22px;
+    height: 56px;
+    width: 89px;
+    background-color: #ffb742;
+    border: none;
+    border-radius: 50% ;
+    cursor: pointer;
+}
+
 .fa-paper-plane{
-    /* position: absolute; */
-    right: 6%;
-    top: 30%;
+    position: relative;
+    right: 65px;
+    top: 16px;
     padding: 0;
     pointer-events: none;
     font-size: 23px;
     color: #212529;
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
+    /* background-color: #ffb742; */
+}
+
+.footer_copyright{
+    padding: 20px;
+    background: #111111;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
 }
